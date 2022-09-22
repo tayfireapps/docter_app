@@ -1,6 +1,7 @@
 import { Outlet } from 'react-router-dom';
 // material
 import { styled } from '@mui/material/styles';
+import Header from '../../widgets/Header';
 
 // ----------------------------------------------------------------------
 
@@ -16,8 +17,7 @@ const RootStyle = styled('div')({
 export default function SiteLayout() {
   return (
     <RootStyle>
-        <div className='DashboardNavbar'></div>
-        <div className='DashboardSidebar'></div>
+        <Header />
         <Outlet />
     </RootStyle>
   );
